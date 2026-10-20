@@ -57,7 +57,8 @@ namespace Assignment
             undoStack.Push(action1);
             undoStack.Push(action2);
             undoStack.Push(action3);
-
+            
+            //ถ้าอยากรู้ว่าผู้เล่นทำอะไรไปบ้าง จากล่าสุดไปแรกสุดให้ใช้ Array ช่วย
             int c = undoStack.Count;
             string[] history = new string[c];
             for (int i = 0; i < c; i++)
@@ -80,6 +81,7 @@ namespace Assignment
             queue.Enqueue(action2);
             queue.Enqueue(action3);
 
+            //ถ้าอยากรู้ว่าผู้เล่นทำอะไรไปบ้าง จากแรกสุดไปล่าสุดให้ใช้ Array ช่วย
             int c = queue.Count;
             string[] actionList = new string[c];
             for (int i = 0; i < c; i++)
