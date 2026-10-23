@@ -66,6 +66,7 @@ namespace Solution
                 Vector2.up,
                 Vector2.up,
                 Vector2.left,
+                Vector2.down,
                 Vector2.down
             };
             for (int i = 0; i < moves.Length; i++)
